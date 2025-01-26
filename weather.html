@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Website</title>
+    <link rel="shortcut icon" href="wesiteicon/websiteicon.png" type="icon">
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+    <div class="main">
+    <div class="header-section">
+        <img src="wesiteicon/websiteicon.png" width="40px">
+        <h1>Weather Website</h1>
+    </div>
+    <div class="search-section">
+        <input id="textinput" type="text" placeholder="Search for a city">
+        <button onclick="search()"><img src="searchsection-images/search.png" width="25px" height="25px"></button>
+        <div>
+    </div>
+    </div>
+    <div class="cities">
+        <button onclick="searchViaOption('Current Location')" class="currentlocation"><img src="searchsection-images/location.png" width="13px"> Current Location</button><button onclick="searchViaOption('London')">London</button><button onclick="searchViaOption('Boston')">Boston</button><button onclick="searchViaOption('Hyderabad')">Hyderabad</button><button onclick="searchViaOption('Livingston')">Livingston</button><button onclick="searchViaOption('Beijing')">Beijing</button>
+    </div>
+    <div class="notfound">
+        <img src="notofound-image/notfound1.png" alt="search-icon">
+    </div>
+    <div class="content-section">
+    <div class="left-section">
+        <div class="left-section-display">
+            <div>
+                <img src="leftsection-images/sunrise.png" height="30px">
+            </div>
+            <div>
+                <p>Sunrise</p>
+                <p id="sunrise">6:00 Am</p>
+            </div>
+            </div>
+            <div class="left-section-display">
+                <div>
+                    <img src="leftsection-images/sunset.png" height="30px">
+                </div>
+                <div>
+                    <p>Sunset</p>
+                    <p id="sunset">5:00 Pm</p>
+                </div>
+            </div>
+            <div class="left-section-display">
+                <div>
+                    <img src="leftsection-images/lon.png" height="30px">
+                </div>
+                <div>
+                    <p>Longitude</p>
+                    <p>3.6&deg;</p>
+                </div>
+            </div>
+            <div class="left-section-display">
+                <div>
+                    <img src="leftsection-images/lat.png" height="30px">
+                </div>
+                <div>
+                    <p>Latitude</p>
+                    <p>57.9&deg;</p>
+                </div>
+            </div>
+            <div class="left-section-display">
+                <div>
+                    <img src="leftsection-images/rain.png" height="30px">
+                </div>
+                <div>
+                    <p>Chance of rains</p>
+                    <p>36&percnt;</p>
+                </div>
+            </div>
+    </div>
+    <div class="center-section">
+            <div class="center-section-info">
+            <div>
+            <p id="cityname">Hyderabad</p>
+            <p id="tempurature">36&deg;C</p>
+            </div>
+            <div>
+                <img  id="weather-img" src="centersection-images/sunny.png" height="70px">
+                <p>CLear</p>
+            </div>
+        </div>
+            <div class="center-section-additional">
+                <div class="center-section-display">
+                    <div>
+                    <img src="centersection-images/humidity.png" height="30px">
+                    </div>
+                    <div>
+                    <p>Humidity</p>
+                    <p>38%</p>
+                    </div>
+                </div>
+                <div class="center-section-display">
+                    <div>
+                    <img src="centersection-images/pressure.png" height="30px">
+                    </div>
+                    <div>
+                    <p>Pressure</p>
+                    <p>10 pas</p>
+                    </div>
+                </div>
+                <div class="center-section-display">
+                    <div>
+                    <img src="centersection-images/speed.png" height="30px">
+                    </div>
+                    <div>
+                    <p>Wind</p>
+                    <p>36 kmph</p>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <div class="right-section">
+                <div class="right-section-display">
+                <div>
+                <img src="rightsection-images/feelslike.png" height="30px">
+                </div>
+                <div>
+                <p>Feels Like</p>
+                <p>38&deg;C</p>
+                </div>
+                </div>
+                <div class="right-section-display">
+                <div>
+                <img src="rightsection-images/mintemp.png" height="30px">
+                </div>
+                <div>
+                <p>Min Tempurature</p>
+                <p>36.0&deg;C</p>
+                </div>
+                </div>
+                <div class="right-section-display">
+                <div>
+                <img src="rightsection-images/maxtemp.png" height="30px">
+                </div>
+                <div>
+                <p>Max Tempurature</p>
+                <p>52.0&deg;C</p>
+                </div>
+                </div> 
+                <div class="right-section-display">
+                <div>
+                <img src="rightsection-images/visibility.png" height="30px">
+                </div>
+                <div>
+                <p>Visibility</p>
+                <p>clear</p>
+                </div>
+                </div>
+                <div class="right-section-display">
+                <div>
+                <img src="rightsection-images/clouds.png" height="30px">
+                </div>
+                <div>
+                <p>Clouds</p>
+                <p>36&percnt;</p>
+                </div>
+                </div>
+    </div>
+    </div>
+</div>
+<script src="weather.js"></script>
+</body>
+</html>
